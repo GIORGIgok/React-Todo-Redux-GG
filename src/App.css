@@ -1,0 +1,98 @@
+/* todo redux */
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background: rgb(238,174,202);
+	background: -moz-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+}
+
+.to-do-app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+}
+
+input {
+	position: relative;
+	width: 350px;
+	height: 30px;
+	border-radius: 10px;
+	border: 2px solid transparent;
+	outline: 2px solid black;
+	font-size: 18px;
+}
+
+input:focus-within {
+	border: 2px solid rgb(238, 255, 0);
+	outline: 3px solid violet;
+}
+
+input::placeholder {
+	font-size: 18px;
+}
+
+#add-button {
+	margin-top: 7px;
+	width: 80px;
+	height: 40px;
+	font-size: 21px;
+	color: white;
+	background-color: rgb(36, 36, 36);
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	display: flex;
+	justify-content: space-between;
+	border: 2px gray solid;
+	background-color: rgb(255, 255, 255);
+	border-radius: 12px;
+	font-size: 20px;
+	cursor: pointer;
+	margin-block: 4px;
+}
+
+li:hover {
+	display: flex;
+	justify-content: space-between;
+	border: 2px gray solid;
+	background-color: rgb(231, 231, 231);
+	border-radius: 12px;
+	font-size: 20px;
+}
+
+li span {
+	padding: 10px 30px 10px 10px;
+}
+
+#del-btn {
+	border-top-right-radius: 9px;
+	border-bottom-right-radius: 9px;
+	color: white;
+	background-color: #e92a2a91;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+}
+
+#del-btn:hover {
+	border-top-right-radius: 9px;
+	border-bottom-right-radius: 9px;
+	color: white;
+	background-color: #e92a2a;
+	font-size: 20px;
+	border: none;
+}
