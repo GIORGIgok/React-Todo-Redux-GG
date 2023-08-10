@@ -23,15 +23,13 @@ input {
 	width: 350px;
 	height: 30px;
 	border-radius: 10px;
-	border: 2px solid transparent;
-	outline: 2px solid black;
+	border: 2px solid black;
+	outline: none;
 	font-size: 18px;
 }
 
 input:focus-within {
 	border: 2px solid rgb(238, 255, 0);
-	border-radius: 10px;
-	outline: 3px solid violet;
 }
 
 input::placeholder {
@@ -55,21 +53,24 @@ ul {
 	padding: 0;
 }
 
-input {
-  position: relative;
-  width: 350px;
-  height: 30px;
-  border-radius: 10px;
-  border: 2px solid transparent;
-  outline: none;
-  font-size: 18px;
+li {
+	display: flex;
+	justify-content: space-between;
+	border: 2px gray solid;
+	background-color: rgb(255, 255, 255);
+	border-radius: 12px;
+	font-size: 20px;
+	cursor: pointer;
+	margin-block: 4px;
 }
 
-input:focus,
-input:focus-within {
-  border: 2px solid rgb(238, 255, 0);
-  border-radius: 10px;
-  outline: 3px solid violet;
+li:hover {
+	display: flex;
+	justify-content: space-between;
+	border: 2px gray solid;
+	background-color: rgb(231, 231, 231);
+	border-radius: 12px;
+	font-size: 20px;
 }
 
 li span {
